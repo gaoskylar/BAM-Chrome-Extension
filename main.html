@@ -1,10 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>BAM.money</title>
-  </head>
-  <body>
-    <h1>BAM.money</h1>
-    <p>Display real-time sentiment scores for stocks.</p>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>BAM.money</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      width: 200px;
+    }
+
+    #upgrade-button {
+      display: block;
+      margin-left: auto;
+      margin-right: 0px;
+      background-color: white;
+      border: 1px #dcdcdc solid;
+      margin-top: 2px;
+      font-size: 11px;
+      border-radius: 2px;
+    }
+
+    #api-key-input {
+      display: block;
+      border: 1px #dcdcdc solid;
+      font-size: 11px;
+      width: 194.5px;
+    }
+
+    .blue-dot {
+      color: rgba(83, 136, 241);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 8px;
+      color: gray;
+      margin-top: 15px;
+      margin-bottom: -5px;
+    }
+
+    .settings-button {
+      position: absolute;
+      top: 5px;
+      right: 0px;
+      background-color: transparent;
+      border: none;
+      font-size: 12px;
+      color: rgba(83, 136, 241);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>BAM<span class="blue-dot">.</span>money</h1>
+
+  <div id="settings-menu">
+    <label for="api-key-input">Premium API Key:</label>
+    <input type="text" id="api-key-input" name="api-key-input">
+    <button id="upgrade-button">Upgrade</button>
+  </div>
+
+  <a href="settings.html" target="_blank">
+    <button class="settings-button">
+      <i class="fas fa-cog"></i>
+    </button>
+  </a>
+
+  <footer>&copy; 2023 BAM.money. All rights reserved.</footer>
+</body>
+
 </html>
